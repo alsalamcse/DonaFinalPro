@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WiehghtUpdate">
+
+    <EditText
+        android:id="@+id/etStartedDate"
+        android:layout_width="241dp"
+        android:layout_height="52dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="307dp"
+        android:layout_marginEnd="143dp"
+        android:ems="10"
+        android:inputType="date"
+        android:text="When you started the diet?"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="259dp" />
+
+    <TextView
+        android:id="@+id/etDaysLift"
+        android:layout_width="233dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginBottom="164dp"
+        android:text="The Diet Ends in Days"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="374dp" />
+
+    <TextView
+        android:id="@+id/etLostenWieght"
+        android:layout_width="234dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="366dp"
+        android:text="The Wieght you lost is "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="321dp" />
+
+    <TextView
+        android:id="@+id/etAdress3"
+        android:layout_width="126dp"
+        android:layout_height="29dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="4dp"
+        android:text="Wieght Update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="7dp" />
+
+    <TextView
+        android:id="@+id/etWeightNeeded"
+        android:layout_width="232dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/etStartedDate"
+        android:layout_alignStart="@+id/etLostenWieght"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="-98dp"
+        android:text="Weight needed"
+        android:textColor="@android:color/holo_red_dark"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="220dp" />
+
+    <EditText
+        android:id="@+id/etCurrentWeight"
+        android:layout_width="229dp"
+        android:layout_height="44dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="410dp"
+        android:ems="10"
+        android:hint="enter your Current weight"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="166dp" />
+
+    <EditText
+        android:id="@+id/etFirstWeight"
+        android:layout_width="228dp"
+        android:layout_height="44dp"
+        android:layout_alignStart="@+id/etWeightNeeded"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="96dp"
+        android:ems="10"
+        android:hint="enter your first weight"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="149dp"
+        tools:layout_editor_absoluteY="112dp" />
+
+    <EditText
+        android:id="@+id/etLength"
+        android:layout_width="227dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/etCurrentWeight"
+        android:layout_alignEnd="@+id/etWeightNeeded"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="-100dp"
+        android:ems="10"
+        android:hint="enter your length"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="58dp" />
+
+    <Button
+        android:id="@+id/btnSaveUpdated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/etAdress3"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:onClick="onClick"
+        android:text="Save" />
+
+</RelativeLayout>

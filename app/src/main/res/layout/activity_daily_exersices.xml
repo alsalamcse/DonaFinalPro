@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DailyExersices">
+
+    <LinearLayout
+        android:layout_width="407dp"
+        android:layout_height="258dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="71dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="77dp">
+
+        <TextView
+            android:id="@+id/etExe1"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:text="1) Dumbbell Clean and Press " />
+
+        <TextView
+            android:id="@+id/etExe2"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:text="2) Standing Landmine Press " />
+
+        <TextView
+            android:id="@+id/etExe3"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:text="3) Incline Dumbbell Press " />
+
+        <TextView
+            android:id="@+id/etExe4"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:text="4) 1 Arm Dumbbell Row " />
+
+        <TextView
+            android:id="@+id/etExe5"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="5) 1 Arm Landmine Row " />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDoneExe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etAdress2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="51dp"
+        android:onClick="onClick"
+        android:text="I'm Done"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="415dp" />
+
+    <TextView
+        android:id="@+id/etAdress2"
+        android:layout_width="172dp"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="3dp"
+        android:text="Today's Exersices"
+        android:textColor="@android:color/holo_blue_dark" />
+
+</RelativeLayout>
